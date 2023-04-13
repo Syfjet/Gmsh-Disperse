@@ -1,4 +1,4 @@
-# Gmsh-disperse
+# Gmsh-Disperse
 ---
 <img src="pic/2d_mesh.png" width="400"><img src="pic/full_mesh.png" width="425">
 ---
