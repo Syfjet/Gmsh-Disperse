@@ -1,5 +1,7 @@
 # Gmsh-disperse
 ---
+<img src="examples/2d_mesh.png" width="400"><img src="examples/full_mesh.png" width="425">
+---
 ##### Данный python-скрипт позволяет генерировать трёхмерную случайную дисперсную структуру, состоящую из сферических неконтактирующих частиц. Алгоритм основан на методе "вязкой суспензии". При выборе "Fragments" расчётная область заполняется сферами, при выборе "Difference" генерируются пустоты.
 ##### Результатом работы является готовый для построения трёхмерной сетки GMSH-файл.
 ##### В настоящий момент скрипт ограничен работой только с элементами Gmsh типа "Box".
@@ -12,5 +14,3 @@
 ##### How to work. In the *.geo file, the size of the computational domain is set (see example/micro.geo), and the necessary parameters are set in main.py (radius of particles, their number and relaxation rate).
 ##### If for a long time the number of iterations grows, and the progress does not reach 100%, then the number of particles and/or the relaxation coefficient should be reduced.
 ---
-<img src="examples/objects.png" width="409"><img src="examples/2d_mesh.png" width="400">
-<img src="examples/full_mesh.png" width="500">
