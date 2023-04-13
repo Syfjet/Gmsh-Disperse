@@ -141,8 +141,7 @@ class Disper_Generator(Obj):
 			self.list_file.append(f"Sphere({self.pos_object+i+1}) = {{{self.object_[i].__x},{self.object_[i].__y},{self.object_[i].__z}, {self.object_[i].__radius}, -Pi/2, Pi/2, 2*Pi}};") # 
 			Volume += 'Volume{'+str(self.pos_object+i+1)+'};'
 		self.list_file.append(f"Boolean{self.__type_}{{Volume{{{str(self.pos_object)}}}; Delete;}} {{{Volume} Delete;}}") 
- 
-		with open('mod_'+self.__name_mesh,'w') as f:		
+		with open('reuslt.geo','w') as f:
 			for i in self.list_file:
 				print(i.strip(),file=f)					
 		return
@@ -155,7 +154,7 @@ class Disper_Generator(Obj):
 		self.__generate_random_position()
 		print("Moving particles")
 		self.__moving()
-		print("Save results file: " + 'mod_'+self.__name_mesh)
+		print("Save results file: reuslt.geo")
 		self.__generate_result_file()
 		print("End work")
 		return
