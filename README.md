@@ -1,6 +1,6 @@
 # Gmsh-Disperse
 ---
-<h1 align="center"> <img src="pic/2d_mesh.png" width="400" class="center"> <img src="pic/full_mesh.png" width="425" class="center">
+<img src="pic/2d_mesh.png" width="400" align="center"> <img src="pic/full_mesh.png" width="425" align="center">
 ---
 
 This python script allows you to generate a three-dimensional random dispersed structure consisting of spherical non-contacting particles. The algorithm is based on the "viscous suspension" method [1]. When "Fragments" is selected, the computational area is filled with spheres, when "Difference" is selected, voids are generated.
